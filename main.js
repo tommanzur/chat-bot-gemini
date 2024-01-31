@@ -22,9 +22,9 @@ async function getResponse(prompt) {
 export const userDiv = (data) => {
   return `
   <!-- User Chat -->
-          <div class="flex items-center gap-2 justify-start">
+          <div class="flex items-center gap-2 justify-start m-2">
             <img src="human.png" alt="user icon" class="w-10 h-10 rounded-full"/>
-            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md">${data}</div>
+            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md mx-2">${data}</div>
           </div>
   `;
 };
@@ -33,8 +33,8 @@ export const userDiv = (data) => {
 export const aiDiv = (data) => {
   return `
   <!-- AI Chat -->
-          <div class="flex gap-2 justify-end">
-            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md">${data}</div>
+          <div class="flex gap-2 justify-end m-2">
+            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md mx-2">${data}</div>
             <img src="bot.png" alt="bot icon" class="w-10 h-10 rounded-full"/>
           </div>
   `;
