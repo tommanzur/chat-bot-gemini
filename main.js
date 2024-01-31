@@ -23,14 +23,8 @@ export const userDiv = (data) => {
   return `
   <!-- User Chat -->
           <div class="flex items-center gap-2 justify-start">
-            <img
-              src="user.png"
-              alt="user icon"
-              class="w-10 h-10 rounded-full"
-            />
-            <p class="bg-gemDeep text-white p-1 rounded-md shadow-md  ">
-              ${data}
-            </p>
+            <img src="human.png" alt="user icon" class="w-10 h-10 rounded-full"/>
+            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md">${data}</div>
           </div>
   `;
 };
@@ -40,14 +34,8 @@ export const aiDiv = (data) => {
   return `
   <!-- AI Chat -->
           <div class="flex gap-2 justify-end">
-            <pre class="bg-gemRegular/40 text-gemDeep p-1 rounded-md shadow-md whitespace-pre-wrap">
-              ${data}
-            </pre>
-            <img
-              src="bot.png"
-              alt="bot icon"
-              class="w-10 h-10 rounded-full"
-            />
+            <div class="bg-gemDeep text-white p-1 rounded-md shadow-md">${data}</div>
+            <img src="bot.png" alt="bot icon" class="w-10 h-10 rounded-full"/>
           </div>
   `;
 };
@@ -65,7 +53,7 @@ async function handleSubmit(event) {
 
   console.log("user message", prompt);
 
-  chatArea.innerHTML += userDiv(prompt);
+  chatArea.innerHTML += userDiv(md().render(prompt));
   userMessage.value = "";
   const aiResponse = await getResponse(prompt);
   let md_text = md().render(aiResponse);
