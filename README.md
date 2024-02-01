@@ -1,6 +1,6 @@
-# ArguBot: A Conversational AI Chatbot
+# ChatBot: A Conversational AI Chatbot
 
-Welcome to the GitHub repository of ArguBot, an AI-powered chatbot designed to deliver an interactive and engaging conversational experience. Built using JavaScript and integrating Google's Generative AI, ArguBot is a modern chat application that showcases cutting-edge technology in natural language processing and user interaction.
+Welcome to the GitHub repository of ChatBot, an AI-powered chatbot designed to deliver an interactive and engaging conversational experience. Built using JavaScript and integrating Google's Generative AI, ChatBot is a modern chat application that showcases cutting-edge technology in natural language processing and user interaction.
 
 ## Features
 
@@ -8,6 +8,13 @@ Welcome to the GitHub repository of ArguBot, an AI-powered chatbot designed to d
 - **User-Friendly Interface**: A clean and intuitive chat interface, ensuring a seamless user experience.
 - **History Tracking**: Maintains a conversation history for context retention and improved chat continuity.
 - **Markdown Support**: Responses are rendered using markdown for enhanced readability and formatting.
+
+## ChatBot Interface Overview
+
+![ChatBot User Interface](public/Chatbot.png)
+
+The above image illustrates the user interface of ChatBot. Our chatbot integrates the latest in conversational AI to provide a smooth and natural chatting experience. The interface is designed to be simple and user-friendly, making it easy for users to start chatting with ChatBot right away. With the integration of the Gemini-Pro model from Google Generative AI, users can expect high-quality, coherent, and context-aware conversations.
+
 
 ## Installation and Setup
 
