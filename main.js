@@ -18,7 +18,7 @@ async function getResponse(prompt) {
   return text;
 }
 
-// user chat div
+// User chat div
 export const userDiv = (data) => {
   return `
   <!-- User Chat -->
@@ -81,18 +81,18 @@ chatForm.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) handleSubmit(event);
 });
 
-// Obtén los elementos
+// Get the elements
 const chatbotPopup = document.getElementById('chatbot-popup');
 const openChatbotButton = document.getElementById('open-chatbot');
 
-// Evento para abrir el chatbot
+// Event to open the chatbot
 openChatbotButton.addEventListener('click', () => {
     chatbotPopup.style.display = 'block';
 });
 
 const closeChatbotButton = document.getElementById('close-chatbot');
 
-// Evento para cerrar el chatbot
+// Event to close the chatbot
 closeChatbotButton.addEventListener('click', () => {
     chatbotPopup.style.display = 'none';
 });
