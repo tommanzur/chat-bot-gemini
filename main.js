@@ -80,3 +80,19 @@ chatForm.addEventListener("submit", handleSubmit);
 chatForm.addEventListener("keyup", (event) => {
   if (event.keyCode === 13) handleSubmit(event);
 });
+
+// Obtén los elementos
+const chatbotPopup = document.getElementById('chatbot-popup');
+const openChatbotButton = document.getElementById('open-chatbot');
+
+// Evento para abrir el chatbot
+openChatbotButton.addEventListener('click', () => {
+    chatbotPopup.style.display = 'block';
+});
+
+const closeChatbotButton = document.getElementById('close-chatbot');
+
+// Evento para cerrar el chatbot
+closeChatbotButton.addEventListener('click', () => {
+    chatbotPopup.style.display = 'none';
+});
